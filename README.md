@@ -1,7 +1,7 @@
 checkers
 ========
 
-command line checkers!
+command line checkers! (a work in progress)
 
 
       +--------------------------------------------------------+
