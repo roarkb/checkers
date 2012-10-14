@@ -29,6 +29,21 @@
 #      |       #######       #######       #######       #######|
 #      +--------------------------------------------------------+
 
+ROWS = %w[ a b c d e f g h ]
+
+def to_ii( pos ) # a2
+  y = ROWS.index( pos.chop )
+  x = pos.delete!( pos.chop ).to_i - 1
+
+  [ y, x ]
+end
+
+def to_pos( ii ) # [ 0, 1 ]
+  y = ROWS.values_at( ii[0] ).to_s
+  x = ii[1] + 1
+
+  "#{y}#{x}"
+end
 
 # piece shapes
 STAR        = [ "   ^   ", " <   > ", "   v   " ]
@@ -136,8 +151,8 @@ pieces = [
   STAR, STAR_KING
 ]
 
-puts board( pieces )
-print_maps
+#puts board( pieces )
+#print_maps
 
 #piece_puts( STAR )
 #piece_puts( STAR_KING )
