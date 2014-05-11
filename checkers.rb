@@ -151,7 +151,7 @@ pieces = [
   STAR, STAR_KING
 ]
 
-#puts board( pieces )
+puts board( pieces )
 #print_maps
 
 #piece_puts( STAR )
